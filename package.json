@@ -16,5 +16,8 @@
     "url": "https://github.com/csezeze/hello-render/issues"
   },
   "homepage": "https://github.com/csezeze/hello-render#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
