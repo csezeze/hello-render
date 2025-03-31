@@ -1,13 +1,17 @@
-# ☁️ Hello Render – Zeynep'in İlk Sunucusu 🎉
+#  Hello Render – Zeynep'in İlk Sunucusu 
 
 Merhaba!  
 Ben Zeynep ve bu benim ilk **canlı web sunucum**!  
 Bu repo, Node.js ve Express.js kullanılarak geliştirdiğim, Render üzerinde yayınladığım mini bir test projesidir. 🌍✨
 
-## 🚀 Ne Yapar?
+## Ne Yapar?
 Tarayıcıdan `https://zeynep-node.onrender.com` adresine gittiğinizde sizi şöyle karşılar:
 
 > **"Merhaba Zeynep! İlk sunucun çalışıyor 🎉"**
+
+> ⚠️ Not: Render ücretsiz planında sunucu belli bir süre aktif kullanılmazsa uyku moduna geçer.  
+> Bu yüzden bağlantıya tıkladığınızda sayfa hemen yüklenmeyebilir. Lütfen birkaç saniye bekleyin. 🙂
+
 
 ## 📦 Kullanılan Teknolojiler
 
@@ -34,6 +38,6 @@ Bundan sonraki projelerimin temeli burası olacak.
 
 ---
 
-🦄  
+
 Zeynep Özkan • Ankara Medipol Üniversitesi  
 csezeze.github.io
