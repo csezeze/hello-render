@@ -1,3 +1,4 @@
+let ziyaretciSayaci=0;
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
@@ -12,7 +13,9 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Merhaba Zeynep! İlk sunucun çalışıyor 🎉');
+  res.send('Merhaba Zeynep! İlk sunucun çalışıyor 🦥');
+  ziyaretSayaci++;
+  res.send ('Zeynep sana bir haberim var ! Bu sayfa ${ziyaretSayaci} kez ziyaret edildi.`);
 });
 
 app.listen(port, () => {
