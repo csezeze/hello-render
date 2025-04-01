@@ -20,6 +20,14 @@ Tarayıcıdan `https://zeynep-node.onrender.com` adresine gittiğinizde sizi ş�
 - Git + GitHub
 - Render (Deployment için)
 
+## 📝 Yeni Özellikler
+
+- Gelen her istekte kullanıcının IP adresi ve bağlantı zamanı sunucu konsoluna loglanıyor.  
+  Bu, **temel düzeyde bir loglama** pratiğidir ve siber güvenlikte olay takibi (incident tracking) açısından önemlidir.
+
+> Örnek log çıktısı:
+IP: 123.456.789.10 - Date: Sun Apr 01 2025 12:34:56 GMT+0300 (GMT+03:00)
+
 ## 📚 Öğrendiklerim
 
 - Terminal kullanımı
@@ -28,13 +36,7 @@ Tarayıcıdan `https://zeynep-node.onrender.com` adresine gittiğinizde sizi ş�
 - Git versiyonlama
 - GitHub’a proje göndermek
 - Render ile canlıya alma süreci
-- Ve en önemlisi: **sabrın ve azmin başarı getirdiğini** 💪
-
-## 💜 Not
-
-Bu repo benim için çok özel çünkü ilk göz ağrım.  
-Bundan sonraki projelerimin temeli burası olacak.  
-☺️
+- Loglamanın temelini öğrendim: IP ve zaman bilgilerini yakalama 
 
 ---
 
