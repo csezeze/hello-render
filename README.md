@@ -7,7 +7,7 @@ Bu repo, Node.js ve Express.js kullanılarak geliştirdiğim, Render üzerinde y
 ## Ne Yapar?
 Tarayıcıdan `https://zeynep-node.onrender.com` adresine gittiğinizde sizi şöyle karşılar:
 
-> **"Merhaba Zeynep! İlk sunucun çalışıyor 🎉"**
+> **"Merhaba Zeynep! İlk sunucun çalışıyor 🎉🦥"**
 
 > ⚠️ Not: Render ücretsiz planında sunucu belli bir süre aktif kullanılmazsa uyku moduna geçer.  
 > Bu yüzden bağlantıya tıkladığınızda sayfa hemen yüklenmeyebilir. Lütfen birkaç saniye bekleyin. 🙂
@@ -28,6 +28,9 @@ Tarayıcıdan `https://zeynep-node.onrender.com` adresine gittiğinizde sizi ş�
 > Örnek log çıktısı:
 IP: 123.456.789.10 - Date: Sun Apr 01 2025 12:34:56 GMT+0300 (GMT+03:00)
 
+> **"Bu sayfa X kez ziyaret edildi."**  
+ Yani her ziyaretçiyi sayan bir **ziyaretçi sayacı** eklendi!
+
 ## 📚 Öğrendiklerim
 
 - Terminal kullanımı
@@ -37,7 +40,7 @@ IP: 123.456.789.10 - Date: Sun Apr 01 2025 12:34:56 GMT+0300 (GMT+03:00)
 - GitHub’a proje göndermek
 - Render ile canlıya alma süreci
 - Loglamanın temelini öğrendim: IP ve zaman bilgilerini yakalama 
-
+- Ziyaretçi sayacı tutmak
 ---
 
 
