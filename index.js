@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-app.use(express.static('public'));
 const port = process.env.PORT || 3000;
 
 let ziyaretSayaci = 0;
@@ -14,10 +13,19 @@ app.use((req, res, next) => {
   next();
 });
 
-// public klasörünü aç
+// Ziyaret sayacı (sadece index.html için)
+app.use((req, res, next) => {
+  if (req.path === '/index.html') {
+    ziyaretSayaci++;
+    console.log(`Ziyaret Sayısı: ${ziyaretSayaci}`);
+  }
+  next();
+});
+
+// public klasörünü servis et
 app.use(express.static('public'));
 
-// Ana sayfa
+// Ana sayfa yönlendirmesi (isteyen '/' ile girerse index.html yollansın)
 app.get('/', (req, res) => {
   ziyaretSayaci++;
   console.log(`Bu sayfa ${ziyaretSayaci} kez ziyaret edildi.`);
