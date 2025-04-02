@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
 app.use(express.urlencoded({ extended: true })); // Form verisini alabilmek için
 
 app.post('/cevap', (req, res) => {
-  const secilen = req.body.secenek;
+  const secilen = req.body.secenek.toLowerCase();
   if (secilen === 'ankara') {
     res.send('✅ Doğru cevap! Ankara Türkiye\'nin başkentidir.');
   } else {
