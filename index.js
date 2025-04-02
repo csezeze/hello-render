@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
+app.use(express.urlencoded({ extended: true })); // Form verisini alabilmek için
+
 
 let ziyaretSayaci = 0;
 
@@ -32,7 +34,6 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
 });
 
-app.use(express.urlencoded({ extended: true })); // Form verisini alabilmek için
 
 app.post('/cevap', (req, res) => {
   const secilen = req.body.secenek.toLowerCase();
