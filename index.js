@@ -32,6 +32,18 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
 });
 
+app.use(express.urlencoded({ extended: true })); // Form verisini alabilmek için
+
+app.post('/cevap', (req, res) => {
+  const secilen = req.body.secenek;
+  if (secilen === 'ankara') {
+    res.send('✅ Doğru cevap! Ankara Türkiye\'nin başkentidir.');
+  } else {
+    res.send('❌ Maalesef yanlış cevap. Doğru cevap Ankara olacaktı.');
+  }
+});
+
+
 app.listen(port, () => {
   console.log(`Sunucu ${port} portunda çalışıyor`);
 });
