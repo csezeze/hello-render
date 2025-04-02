@@ -4,14 +4,16 @@ const port = process.env.PORT || 3000;
 
 let ziyaretSayaci = 0;
 
+// IP ve zaman loglama middleware
+app.use((req, res, next) => {
+  const zaman = new Date().toLocaleString();
+  const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
+  console.log(`[${zaman}] ${ip} -> ${req.method} ${req.url}`);
+  next();
+});
+
 app.get('/', (req, res) => {
   ziyaretSayaci++;
-
-  // IP ve zaman bilgisi loglansın
-  const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-  const now = new Date().toString();
-  console.log(`IP: ${ip} - Date: ${now}`);
-
   res.send(`Merhaba Zeynep! İlk sunucun çalışıyor 🎉🦥<br>Bu sayfa ${ziyaretSayaci} kez ziyaret edildi.`);
 });
 
