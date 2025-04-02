@@ -4,6 +4,8 @@ Merhaba!
 Ben Zeynep ve bu benim ilk **canlı web sunucum**!  
 Bu repo, Node.js ve Express.js kullanılarak geliştirdiğim, Render üzerinde yayınladığım mini bir test projesidir. 🌍✨
 
+## https://zeynep-node.onrender.com/ bağlantıya gittiğinizde sizi mini bir quiz karşılayacaktır.
+
 > ⚠️ Not: Render ücretsiz planında sunucu belli bir süre aktif kullanılmazsa uyku moduna geçer.  
 > Bu yüzden bağlantıya tıkladığınızda sayfa hemen yüklenmeyebilir. Lütfen birkaç saniye bekleyin. 🙂
 
