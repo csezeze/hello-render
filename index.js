@@ -4,11 +4,14 @@ const port = process.env.PORT || 3000;
 
 let ziyaretSayaci = 0;
 
-// IP ve zaman loglama middleware’i
+// IP, zaman ve user-agent loglama middleware’i
 app.use((req, res, next) => {
-  const zaman = new Date().toString(); // Uzun ve detaylı format
+  const zaman = new Date().toString();
   const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
+  const userAgent = req.headers['user-agent'];
+
   console.log(`IP: ${ip} - Date: ${zaman} → ${req.method} ${req.url}`);
+  console.log(`User-Agent: ${userAgent}`);
   next();
 });
 
